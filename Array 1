@@ -1,0 +1,57 @@
+package array;
+
+import static java.lang.Integer.sum;
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Jess
+ */
+public class Array {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner input = new Scanner ( System.in);
+        int A[]= new int [10]; // ARRAY SYMBOL
+        A[1] = 100;
+        
+        String number = JOptionPane.showInputDialog("Enter Name");
+        int num = Integer.parseInt(number);                         
+        
+        for (int i = 0; i < 10; i++) {          
+            System.out.println("Enter Value @ index" + i + ":");
+             A[i] = input.nextInt();{
+        
+        }
+        boolean isPrime = true;        
+        {
+                                                        
+             for (int j = 2; j < i; j++) {
+                if (i % j == 0) {
+                    isPrime = false;
+                    break;
+                    
+                }
+                
+             }
+             if(isPrime){
+                 System.out.println(i + " is a Prime");
+                 
+             }{
+            int num1 = Integer.parseInt(JOptionPane.showInputDialog("Enter Number 1"));
+            int num2 = Integer.parseInt(JOptionPane.showInputDialog("Enter Number 1"));
+            int sum = num1 + num2;
+            JOptionPane.showMessageDialog(null, sum + "");
+        }
+        
+        }
+        
+        }
+        
+    }
+    
+}
+    
